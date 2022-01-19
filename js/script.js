@@ -59,13 +59,7 @@ alunno3 = {
 console.log(alunno3);
 alunni.push(alunno3);
 
-alunno4 = {
-    nome: formName,
-    cognome: formSurname,
-    età: formAge
-}
-console.log(alunno4);
-alunni.push(alunno4);
+
 
 
 // ! 4 CICLO SU TUTTI GLI STUDENTI E STAMPO
@@ -82,3 +76,24 @@ for (i = 0; i < alunni.length; i++) {
     console.log(alunnoPerRiga);
 };
 
+// ! BONUS
+
+generateButton.addEventListener('click', function(){
+
+    alunno4 = {
+        nome: formName,
+        cognome: formSurname,
+        età: formAge
+    }
+    console.log(alunno4);
+    alunni.push(alunno4);
+
+    const nomeStudente = alunno4['nome'];
+    const cognomeStudente = alunno4['cognome'];
+    const etàStudente = alunno4['età']
+
+    const alunnoPerRiga = document.createElement('p');
+    alunnoPerRiga.innerHTML = `${nomeStudente}, ${cognomeStudente}, ${etàStudente}`;
+    listaStudenti.appendChild(alunnoPerRiga);
+    console.log(alunnoPerRiga);
+})
