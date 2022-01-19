@@ -12,9 +12,9 @@ console.log('JS OK');
 // RECUPERO ELEMENTI
 const printStudente = document.getElementById('studente');
 const listaStudenti = document.getElementById('lista-studenti');
-const formName = document.getElementById('fname').value;
-const formSurname = document.getElementById('lname').value;
-const formAge = document.getElementById('age').value;
+const formName = document.getElementById('fname');
+const formSurname = document.getElementById('lname');
+const formAge = document.getElementById('age');
 const generateButton = document.getElementById('generate');
 
 // ! 1 CREIAMO OGGETTO DESCRIZIONE STUDENTE
@@ -81,10 +81,10 @@ for (i = 0; i < alunni.length; i++) {
 generateButton.addEventListener('click', function(){
 
     alunno4 = {
-        nome: formName,
-        cognome: formSurname,
-        età: formAge
-    }
+        nome: formName.value,
+        cognome: formSurname.value,
+        età: formAge.value
+    };
     console.log(alunno4);
     alunni.push(alunno4);
 
@@ -96,4 +96,4 @@ generateButton.addEventListener('click', function(){
     alunnoPerRiga.innerHTML = `${nomeStudente}, ${cognomeStudente}, ${etàStudente}`;
     listaStudenti.appendChild(alunnoPerRiga);
     console.log(alunnoPerRiga);
-})
+});
