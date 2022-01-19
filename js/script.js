@@ -9,6 +9,9 @@ console.log('JS OK');
 // BONUS:
 // Usiamo il DOM per stampare e chiedere le informazioni all'utente!
 
+// RECUPERO ELEMENTI
+const printStudente = document.getElementById('studente');
+
 // ! 1 CREIAMO OGGETTO DESCRIZIONE STUDENTE
 const studente = {
     nome: 'Federico',
@@ -17,3 +20,6 @@ const studente = {
 }
 console.log(studente);
 
+for (let key in studente) {
+    printStudente.innerHTML = `Nome: ${studente['nome']} | cognome: ${studente['cognome']} | età: ${studente['età']}`;
+}
