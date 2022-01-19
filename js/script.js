@@ -11,6 +11,7 @@ console.log('JS OK');
 
 // RECUPERO ELEMENTI
 const printStudente = document.getElementById('studente');
+const listaStudenti = document.getElementById('lista-studenti');
 
 // ! 1 CREIAMO OGGETTO DESCRIZIONE STUDENTE
 const studente = {
@@ -21,21 +22,27 @@ const studente = {
 console.log(studente);
 
 
-
+// ! 2 STAMPARE A SCHERMO
 for (let key in studente) {
     const datiStudente = `Nome: ${studente['nome']} | cognome: ${studente['cognome']} | età: ${studente['età']}`;
     printStudente.innerHTML = datiStudente;
 }
 
+// ! 3 CREO ARRAY OGGETTI STUDENTI
 let alunni = [
     {
         nome: 'Antonio',
         cognome: 'Nicodemo', 
-        età: '24'
+        età: '25'
     },
     {
-        nome: 'Federico',
-        cognome: 'Bernardi', 
-        età: '24'
+        nome: 'Pietro',
+        cognome: 'Scandola', 
+        età: '23'
     }
 ];
+
+// ! 4 CICLO SU TUTTI GLI STUDENTI E STAMPO
+for (i = 0; i < alunni.length; i++) {
+
+}
