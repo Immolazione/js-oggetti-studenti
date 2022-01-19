@@ -12,6 +12,8 @@ console.log('JS OK');
 // RECUPERO ELEMENTI
 const printStudente = document.getElementById('studente');
 const listaStudenti = document.getElementById('lista-studenti');
+const formName = document.getElementById('flname').value;
+const formAge = document.getElementById('age').value;
 
 // ! 1 CREIAMO OGGETTO DESCRIZIONE STUDENTE
 const studente = {
@@ -21,12 +23,14 @@ const studente = {
 }
 console.log(studente);
 
-
+let datiStudente = '';
 // ! 2 STAMPARE A SCHERMO
 for (let key in studente) {
-    const datiStudente = `Nome: ${studente['nome']} | cognome: ${studente['cognome']} | età: ${studente['età']}`;
-    printStudente.innerHTML = datiStudente;
-}
+    console.log(key, studente[key]);
+    // const datiStudente = `Nome: ${studente['nome']} | cognome: ${studente['cognome']} | età: ${studente['età']}`;
+    datiStudente += key + ': ' + studente[key] + ',';
+};
+printStudente.innerHTML = datiStudente;
 
 // ! 3 CREO ARRAY OGGETTI STUDENTI
 let alunni = [
@@ -49,8 +53,7 @@ for (i = 0; i < alunni.length; i++) {
     // listaStudenti.innerHTML += `${datiStudente['nome']}, ${datiStudente['cognome']}, ${datiStudente['età']} | `;
 
     const alunnoPerRiga = document.createElement('p');
-    alunnoPerRiga.appendChild;
-    alunnoPerRiga.innerHTML = `Nome: ${datiStudente['nome']}, cognome :  ${datiStudente['cognome']}, età:  ${datiStudente['età']}`;
-    listaStudenti.innerHTML = alunnoPerRiga;
+    alunnoPerRiga.innerHTML = datiStudente['nome'] + ', ' + datiStudente['cognome'] + ', ' + datiStudente['età'];
+    listaStudenti.appendChild(alunnoPerRiga);
     console.log(alunnoPerRiga);
 };
