@@ -8,3 +8,12 @@ console.log('JS OK');
 // 5. Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere all’array creato in precedenza, un nuovo oggetto studente inserendo nell’ ordine: nome, cognome e età.
 // BONUS:
 // Usiamo il DOM per stampare e chiedere le informazioni all'utente!
+
+// ! 1 CREIAMO OGGETTO DESCRIZIONE STUDENTE
+const studente = {
+    nome: 'Federico',
+    cognome: 'Bernardi', 
+    età: '24'
+}
+console.log(studente);
+
