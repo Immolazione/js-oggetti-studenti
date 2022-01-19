@@ -47,11 +47,19 @@ let alunni = [
 ];
 console.log(alunni);
 
+// ! 5 CHIEDO ALL'UTENTE DI INSERIRE UNO STUDENTE
+let nomeNuovoStudente = prompt("Inserisci il nome del nuovo studente").trim();
+let cognomeNuovoStudente = prompt("Inserisci il cognome del nuovo studente").trim();
+let etàNuovoStudente = prompt("Inserisci l'età del nuovo studente").trim();
+
+console.log(nomeNuovoStudente, cognomeNuovoStudente, etàNuovoStudente);
+
 // ! 4 CICLO SU TUTTI GLI STUDENTI E STAMPO
 for (i = 0; i < alunni.length; i++) {
     const nomeStudente = alunni[i]['nome'];
     const cognomeStudente = alunni[i]['cognome'];
     const etàStudente = alunni[i]['età'];
+
     // listaStudenti.innerHTML += `${datiStudente['nome']}, ${datiStudente['cognome']}, ${datiStudente['età']} | `;
 
     const alunnoPerRiga = document.createElement('p');
