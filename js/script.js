@@ -41,8 +41,10 @@ let alunni = [
         età: '23'
     }
 ];
+console.log(alunni);
 
 // ! 4 CICLO SU TUTTI GLI STUDENTI E STAMPO
 for (i = 0; i < alunni.length; i++) {
-
+    const datiStudente = alunni[i];
+    listaStudenti.innerHTML = `${datiStudente['nome']}, ${datiStudente['cognome']}, ${datiStudente['età']}`;
 }
