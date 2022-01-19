@@ -12,8 +12,10 @@ console.log('JS OK');
 // RECUPERO ELEMENTI
 const printStudente = document.getElementById('studente');
 const listaStudenti = document.getElementById('lista-studenti');
-const formName = document.getElementById('flname').value;
+const formName = document.getElementById('fname').value;
+const formSurname = document.getElementById('lname').value;
 const formAge = document.getElementById('age').value;
+const generateButton = document.getElementById('generate');
 
 // ! 1 CREIAMO OGGETTO DESCRIZIONE STUDENTE
 const studente = {
@@ -54,10 +56,16 @@ alunno3 = {
     cognome: prompt("Inserisci il cognome del nuovo studente").trim(),
     età: prompt("Inserisci l'età del nuovo studente").trim()
 }
-
 console.log(alunno3);
-
 alunni.push(alunno3);
+
+alunno4 = {
+    nome: formName,
+    cognome: formSurname,
+    età: formAge
+}
+console.log(alunno4);
+alunni.push(alunno4);
 
 
 // ! 4 CICLO SU TUTTI GLI STUDENTI E STAMPO
