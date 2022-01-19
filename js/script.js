@@ -20,6 +20,22 @@ const studente = {
 }
 console.log(studente);
 
+
+
 for (let key in studente) {
-    printStudente.innerHTML = `Nome: ${studente['nome']} | cognome: ${studente['cognome']} | età: ${studente['età']}`;
+    const datiStudente = `Nome: ${studente['nome']} | cognome: ${studente['cognome']} | età: ${studente['età']}`;
+    printStudente.innerHTML = datiStudente;
 }
+
+let alunni = [
+    {
+        nome: 'Antonio',
+        cognome: 'Nicodemo', 
+        età: '24'
+    },
+    {
+        nome: 'Federico',
+        cognome: 'Bernardi', 
+        età: '24'
+    }
+];
