@@ -34,12 +34,12 @@ printStudente.innerHTML = datiStudente;
 
 // ! 3 CREO ARRAY OGGETTI STUDENTI
 let alunni = [
-    {
+    alunno1 = {
         nome: 'Antonio',
         cognome: 'Nicodemo', 
         età: '25'
     },
-    {
+    alunno2 = {
         nome: 'Pietro',
         cognome: 'Scandola', 
         età: '23'
@@ -48,11 +48,16 @@ let alunni = [
 console.log(alunni);
 
 // ! 5 CHIEDO ALL'UTENTE DI INSERIRE UNO STUDENTE
-let nomeNuovoStudente = prompt("Inserisci il nome del nuovo studente").trim();
-let cognomeNuovoStudente = prompt("Inserisci il cognome del nuovo studente").trim();
-let etàNuovoStudente = prompt("Inserisci l'età del nuovo studente").trim();
 
-console.log(nomeNuovoStudente, cognomeNuovoStudente, etàNuovoStudente);
+alunno3 = {
+    nome: prompt("Inserisci il nome del nuovo studente").trim(),
+    cognome: prompt("Inserisci il cognome del nuovo studente").trim(),
+    età: prompt("Inserisci l'età del nuovo studente").trim()
+}
+
+console.log(alunno3);
+
+
 
 // ! 4 CICLO SU TUTTI GLI STUDENTI E STAMPO
 for (i = 0; i < alunni.length; i++) {
