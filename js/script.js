@@ -50,7 +50,7 @@ for (i = 0; i < alunni.length; i++) {
 
     const alunnoPerRiga = document.createElement('p');
     alunnoPerRiga.appendChild;
-    alunnoPerRiga.innerHTML = `${datiStudente['nome']}, ${datiStudente['cognome']}, ${datiStudente['età']}`;
+    alunnoPerRiga.innerHTML = `Nome: ${datiStudente['nome']}, cognome :  ${datiStudente['cognome']}, età:  ${datiStudente['età']}`;
     listaStudenti.innerHTML = alunnoPerRiga;
     console.log(alunnoPerRiga);
 };
