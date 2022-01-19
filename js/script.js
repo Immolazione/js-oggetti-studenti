@@ -57,6 +57,7 @@ alunno3 = {
 
 console.log(alunno3);
 
+alunni.push(alunno3);
 
 
 // ! 4 CICLO SU TUTTI GLI STUDENTI E STAMPO
