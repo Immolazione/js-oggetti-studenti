@@ -36,12 +36,12 @@ printStudente.innerHTML = datiStudente;
 
 // ! 3 CREO ARRAY OGGETTI STUDENTI
 let alunni = [
-    alunno1 = {
+    {
         nome: 'Antonio',
         cognome: 'Nicodemo', 
         età: '25'
     },
-    alunno2 = {
+    {
         nome: 'Pietro',
         cognome: 'Scandola', 
         età: '23'
